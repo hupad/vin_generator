@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 gem 'bootstrap-sass', '~> 3.3.7'
+gem 'whenever', require: false
 
 group :development, :test do
   gem 'byebug', platform: :mri
