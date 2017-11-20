@@ -1,7 +1,9 @@
 class VinController < ApplicationController
 
   def index
-    random_value = rand(Vin.count)
+    min = Vin.first.id
+    max = Vin.last.id
+    random_value = rand(min..max)
     @vin = Vin.find(random_value)
     respond_to do |format|
       format.html
